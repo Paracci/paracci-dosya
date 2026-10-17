@@ -1,0 +1,8 @@
+* text=auto
+*.png binary
+/artifacts export-ignore
+/private export-ignore
+/dist export-ignore
+/tools/native-runtime export-ignore
+/tools/ocr-data export-ignore
+/tools/ocr-best export-ignore

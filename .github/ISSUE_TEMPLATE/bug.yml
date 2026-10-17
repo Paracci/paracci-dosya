@@ -1,0 +1,26 @@
+name: Hata bildirimi
+description: Gerçek dava verisi içermeyen teknik hata bildirimi
+body:
+  - type: markdown
+    attributes:
+      value: "Belge, ham rapor/log, kişi bilgisi, oturum tokenı veya gerçek dava ekranı eklemeyin. Sentetik örnek kullanın. Güvenlik açıkları için SECURITY.md dosyasına bakın."
+  - type: input
+    id: version
+    attributes:
+      label: Paracci Dosya / Windows / Chrome sürümü
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Belgesiz yeniden üretim adımları
+      description: Beklenen ve gerçekleşen davranışı, kişisel bilgi içermeyen hata metniyle açıklayın.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Paylaşım kontrolü
+      options:
+        - label: Gerçek belge, ham rapor/log, kişisel bilgi, token veya özel dosya yolu paylaşmadım.
+          required: true
